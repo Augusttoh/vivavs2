@@ -1,0 +1,44 @@
+#carrossel1{
+    width: 100%; height: 100%;
+}
+.imagemperfil{
+    float: right;
+}
+
+.imagem5{
+    width: 100%;
+    height: 100%;
+}
+
+
+.inicio2{
+    width: 100%;
+    height: 200%;
+}
+
+body{
+  background: linear-gradient(to right,#d9e5ec, #1B9CE4);
+
+}
+
+.carrossel2{
+    width: 50%;
+    height: 100%;
+}
+
+.link{
+    color: #0012b7;
+    font-size: medium;
+text-decoration: none;
+}
+
+.branco{
+    background-color: white;
+    height: 55%;
+}
+#alinhar{
+    text-align: center;
+}
+.botao1{
+    border-radius: 25%;
+}

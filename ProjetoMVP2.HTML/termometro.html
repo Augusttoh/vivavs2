@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap">
+    <link rel="stylesheet" href="css.css/termometro.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/logonova.png" width="80%" alt="">
+        </div>
+    </header>
+    <br><br><br><br><br>
+
+    <center>
+        <div class="container">
+            <p class="mood2" id="mood2">O que você está sentindo?</p>
+            <div class="emoji" id="emoji">&#128543;</div>
+                <p class="mood" id="mood">Preocupação</p>
+                <input type="range" min="0" max="100" value="10" class="emoji-slider" id="range">
+        </div>
+    </center>
+
+   <script>
+    var emoji= document.getElementById('emoji');
+var mood = document.getElementById('mood');
+var sliderValue =document.getElementById('range');
+
+sliderValue.oninput =function()
+{
+var value = this.value;
+if(value <=10)
+{
+    emoji.innerHTML = '&#128545';
+    mood.innerHTML = 'Raiva';
+}
+
+else if (value <=30)
+{
+    emoji.innerHTML = '&#129314';
+    mood.innerHTML = 'Nojo';
+}
+else if (value <=50)
+{
+    emoji.innerHTML = '&#128552';
+    mood.innerHTML = 'Medo';
+}
+else if (value <=70)
+{
+    emoji.innerHTML = '&#128553;';
+    mood.innerHTML = 'Cansaço';
+}
+else if(value <=90)
+{
+    emoji.innerHTML = '&#128532';
+    mood.innerHTML = 'Tristeza';
+}
+else if(value <=110)
+{
+    emoji.innerHTML = '&#128513';
+    mood.innerHTML = 'Alegria';
+}
+}
+   </script>
+</body>
+</html>

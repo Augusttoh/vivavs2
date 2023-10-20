@@ -1,0 +1,101 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar2') %> 
+
+<link rel="stylesheet" href="partials/bootstrap/bootstrap.min.css">
+<style>
+    #divnoticiasdireita {
+    float: right;
+    width: 75%;
+ }
+ .espacamentoLista {
+    height: 30px;
+ }
+ .linhacolunaesquerda {
+    width: 80%;
+    height: 3px;
+    background-color: #51C951;
+    border: 0px;
+    margin-left: 0;
+ }
+ .textoNoticias {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+ }
+ .tamanho1{
+    text-align: start;
+ }
+
+ 
+
+.imagens2{
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
+.imagens3{
+   width: 90px;
+   height: 90px;
+   border-radius: 100%;
+}
+body{
+   background: linear-gradient(to right, #c3a8eb,#126cd2);
+ }
+
+.link{
+   color: rgb(0, 0, 0);
+   font-size: medium;
+text-decoration: none;
+}
+
+#sair{
+   float: right;
+}
+
+.botao1{
+   border-radius: 100%;
+}
+.posicao{
+   justify-content: space-between;
+}
+
+
+</style>
+
+
+
+
+<div class="tamanho1">
+    <table class="posicao">
+       <tr>
+        <td>
+            <div id="divnoticiasesquerda" class="espacamentoLista">
+                <h4 class="textoNoticias" id="topo">Perfil Administrador</h4>
+                <hr class="linhacolunaesquerda">
+                <p class="textoNoticias"> <a class="link" href="#"><h4>Caixa de mensagens ✉</h4></a></p>
+                <p class="textoNoticias"> <a class="link" href="#"><h4>Histórico de Relatórios 📰</h4></a></p>
+                <div id="divnoticiasesquerda" class="espacamentoLista">
+                  <hr class="linhacolunaesquerda">
+                  <h5 class="textoNoticias" id="topo">Colaboradores</h5>
+                  
+                  <p class="textoNoticias"> <a class="link" href="#">Exibir todos os colaboradores</a></p>
+                  <p class="textoNoticias"> <a class="link" href="#">Setores</a></p>
+                  <p class="textoNoticias"> <a class="link" href="usuario1">Adicionar Colaborador</a></p>
+                  <p class="textoNoticias"> <a class="link" href="#">Excluir Colaborador</a></p>
+                 
+            </div>
+            
+        </td>
+        <td>
+        </td>
+        <p>
+         <td>
+         
+            
+           </div>
+           </td>
+        </p>
+       </tr>
+    </table>
+
+    <script src="partials/bootstrap/bootstrap.min.js"></script>
+<%- include('partials/footer') %> 

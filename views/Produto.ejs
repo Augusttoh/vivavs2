@@ -1,0 +1,106 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar4') %> 
+
+
+<link rel="stylesheet" href="partials/bootstrap/bootstrap.min.css">
+
+<style>
+   
+   body{
+    background: linear-gradient(to right, #c3a8eb,#9762E7);
+      }
+  
+  img{
+      width: 30%;
+      height: 20%;
+  }
+  .estiloinput{
+      margin-top: 1%;
+      height: 30px;
+      font-size: medium;
+      color: #424242;
+   }
+   .form-label{
+      text-align: left;
+   }
+  .circle{
+      
+      width: 30%;
+      
+  }
+  .botao1{
+      border: solid 1px blue;
+      border-radius: 20px;
+      color: blue;
+      background-color: white;
+      transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  
+  }
+
+  .link{
+    color: #0b0c10;
+    font-size: medium;
+ text-decoration: none;
+ float: right;
+ }
+ *{
+    color: white;
+ }
+ .botao{
+  padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #c3a8eb,#126cd2); /* Cor de fundo do botão */
+            color: #ffffff; /* Cor do texto do botão */
+            border: 2px solid #ffffff; /* Cor da borda do botão (branca) */
+        
+  }
+</style>
+<br><br>
+<center>
+   
+</center>
+<br><br>
+<center>
+    <div class="estilobody">
+        <div >
+            <div >
+                <div>
+                    
+                </div>
+                <div>
+                    <form action="/salvarProduto" method="post">
+                        <div class= "mb-3">
+                            <label for="Nome" class="form-label"><h6>Nome da empresa* </h6>
+                           <input  type="text" maxlength="40" size="45" class="form-control" name="nomeempresa" id="nome" placeholder="Digite o nome da empresa" required></label>
+                          </div>
+                          <div class= "mb-3">
+                            <label for="Nome" class="form-label"><h6>Quantidade de Funcionários*</h6>
+                           <input  type="text" maxlength="10" size="45" class="form-control" name="qtdfuncionarios" id="nome" placeholder="Digite seu nome " required></label>
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"><h6>E-mail da empresa</h6>
+                          <input type="email" class="form-control" name="emailempresa" id="nome" maxlength="40" size="45" placeholder="Digite o seu e-mail da empresa"></label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Celular" class="form-label"><h6>Número do Celular/whatsapp*</h6>
+                            <input  type="tel" maxlength="40" size="45" class="form-control" name="celularempresa" id="nome" placeholder="Digite seu celular/whatsapp" required></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="Senha"class="form-label"><h6> Senha*</h6>
+                            <input type="password"  maxlength="40" size="45"  class="form-control" name="senha" id="nome" placeholder="crie uma senha" required></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="Confirmar senha" class="form-label"><h6> Confirmar senha*</h6>
+                            <input type="password"  maxlength="40" size="45" class="form-control" id=" Confirmar senha"placeholder="Confirme sua senha" required></label>
+                          </div>
+                          <button type="submit"class="botao">Cadastra-se</button>
+                    </form>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</center>
+<br>
+<script src="partials/bootstrap/bootstrap.min.js"></script>
+<%- include('partials/footer') %> 

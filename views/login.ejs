@@ -1,0 +1,58 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar4') %> 
+
+    <link rel="stylesheet" href="partials/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/login.css">
+
+    <style>
+        body{
+          background: linear-gradient(to right, #c3a8eb,#9762E7);
+  }
+  
+  .botao{
+  padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #c3a8eb,#9762E7); /* Cor de fundo do botão */
+            color: #ffffff; /* Cor do texto do botão */
+            border: 2px solid #ffffff; /* Cor da borda do botão (branca) */
+        
+  }
+  .link{
+    color: #0b0c10;
+    font-size: medium;
+ text-decoration: none;
+ float: right;
+ }
+ .link2{
+  color: white;
+  text-decoration: none;
+ }
+
+ *{
+  color: white;
+ }
+    </style>
+
+<br><br>
+    
+<br><br><br>
+
+    <form action="/SalvarLoginlogin" method="POST"><center> 
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><h6>E-mail profissional </h6>
+          <input type="email" class="form-control" id="emailempresa" name="emailempresa" maxlength="40" size="45" placeholder="Digite o seu e-mail da empresa" required></label>
+        </div>
+          <div class="mb-3">
+            <label for="Senha"class="form-label"><h6>Senha</h6>
+            <input type="password"  maxlength="40" size="45"  class="form-control" id="senha" name="senha" placeholder="Digite a sua senha" required></label>
+          </div>
+        
+        <button type="submit"class="botao">Entrar</a></button>
+        <br><br><br>
+        <hr>
+        <center><p>Não é cadastrado? Crie sua conta↓</p></center>
+        <a href="cadastrar" class="link2"><button type="submit" class="botao">Criar conta</a></button></a>
+      </form></center>
+
+    <script src="partials/bootstrap/bootstrap.min.js"></script>
+    <%- include('partials/footer') %> 

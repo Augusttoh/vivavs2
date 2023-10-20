@@ -1,0 +1,81 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar3') %> 
+
+
+    <link rel="stylesheet" href="partials/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/login.css">
+
+    <style>
+     body{
+      background: linear-gradient(to right, #c3a8eb,#9762E7);
+       
+    }
+ 
+  
+  .btn btn-secundary{
+    color: brown;
+  }
+  .botao{
+    color: brown;
+    border-radius: 30%;
+  }
+  .link{
+    color: #0b0c10;
+    font-size: medium;
+ text-decoration: none;
+ float: right;
+ }
+ .link2{
+  color: white;
+  text-decoration: none;
+ }
+ .container{
+  width: 300px;
+   height: 300px;
+   
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 4%;
+    box-shadow: 0px 0px 4px #777;
+    align-items: center;
+    
+ }
+ #letra{
+  text-align:center;
+    font-size: auto;
+ }
+ font{
+    color: white;
+ }
+ .branco{
+  color: white;
+ }
+ .botao{
+  padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #c3a8eb,#9762E7); /* Cor de fundo do botão */
+            color: #ffffff; /* Cor do texto do botão */
+            border: 2px solid #ffffff; /* Cor da borda do botão (branca) */
+        
+  }
+    </style>
+
+<br><br>
+    
+<br><br><br><br><br><br>
+
+   <div class="container">
+    
+    <center>
+      <p><h4>Selecione uma opção  ↓</h4></p><br>
+      <button class="botao" id="letra"><a href="login" class="link2" id="letra">   Sou empresa    </a></button> <br><br>
+      <button class="botao" id="letra"><a href="login2" class="link2" id="letra">Sou colaborador</a></button>
+    </center>
+    <br>
+   </div>
+   <hr>
+        <center><center><p class="branco">Não é cadastrado? Crie sua conta↓</p></center>
+        <a href="cadastrar" class="link2"><button type="submit" class="botao">Criar conta</a></button></a></center>
+
+    <script src="partials/bootstrap/bootstrap.min.js"></script>
+    <%- include('partials/footer') %> 

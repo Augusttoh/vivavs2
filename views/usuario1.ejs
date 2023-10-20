@@ -1,0 +1,123 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar4') %> 
+
+
+<link rel="stylesheet" href="partials/bootstrap/bootstrap.min.css">
+
+<style>
+   
+   body{
+    background: linear-gradient(to right, #c3a8eb,#9762E7);
+      
+      }
+  
+ 
+  .estiloinput{
+      margin-top: 1%;
+      height: 30px;
+      font-size: medium;
+      color: #424242;
+   }
+   .form-label{
+      text-align: left;
+   }
+  
+  
+    .botao{
+  padding: 7px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #c3a8eb,#126cd2); /* Cor de fundo do botão */
+            color: #ffffff; /* Cor do texto do botão */
+            border: 2px solid #ffffff; /* Cor da borda do botão (branca) */
+        
+  }
+  
+  
+
+  .link{
+    color: #0b0c10;
+    font-size: medium;
+ text-decoration: none;
+ float: right;
+ }
+ .cor1{
+    color: red;
+ }
+ 
+ *{
+  color: white;
+ }
+</style>
+<br><br>
+<center>
+    
+</center>
+<br><br>
+<center>
+    <div class="estilobody">
+        <div >
+            <div >
+                <div>
+                    
+                </div>
+                <div>
+                    <form action="/Salvarusuario1" method="post">
+                        <div class= "mb-3">
+                            <label for="Nome" class="form-label"><h6><p>Nome <span class="cor1">*</span></p></h6>
+                           <input  type="text" maxlength="40" size="45" class="form-control" name="nome_usuario" id="nome" placeholder="Digite o nome do colaborador" required></label>
+                          </div>
+                          <div class= "mb-3">
+                            <label for="Nome" class="form-label"><h6><p>Gênero <span class="cor1">*</span></p></h6></label>
+    
+                            <input type="radio" id="opcao1" name="genero" value="Masculino">
+                            <label for="opcao1">Masculino</label>
+                            
+                            <input type="radio" id="opcao2" name="genero" value="Feminino">
+                            <label for="opcao2">Feminino</label>
+                            
+                            <input type="radio" id="opcao3" name="genero" value="Outro">
+                            <label for="opcao3">Outro</label>
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label"><h6><p>Idade <span class="cor1">*</span></p></h6>
+                          <input type="text" class="form-control" name="idade" id="nome" maxlength="40" size="45" placeholder="Digite a idade do colaborador"></label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="text" class="form-label"><h6><p>Empresa Id <span class="cor1">*</span></p></h6>
+                            <input  type="text" maxlength="40" size="45" class="form-control" name="empresa_id" id="nome" placeholder="Digite o empresa Id" required></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="text"class="form-label"><h6> <p>Cargo  <span class="cor1">*</span></p></h6>
+                            <input type="text"  maxlength="40" size="45"  class="form-control" name="funcao" id="nome" placeholder="Digite o cargo do colaborador" required></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="text" class="form-label"><h6> <p>Setor <span class="cor1">*</span></p></h6>
+                            <input type="text"  maxlength="40" size="45" class="form-control" name="setor"  id="nome" placeholder="Digite o setor do colaborador" required></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"><h6><p>E-mail <span class="cor1">*</span></p></h6>
+                            <input type="email" class="form-control" name="email_usuario" id="nome" maxlength="40" size="45" placeholder="Digite o e-mail do colaborador"></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="celular" class="form-label"><h6>Celular*</h6>
+                            <input type="tel" class="form-control" name="celular_usuario" id="nome" maxlength="40" size="45" placeholder="Digite o celular do colaborador"></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"><h6><p>Login <span class="cor1">*</span></p></h6>
+                            <input type="text" class="form-control" name="login" id="nome" maxlength="40" size="45" placeholder="Defina um login Único para o Colaborador"></label>
+                          </div>
+                          <div class="mb-3">
+                            <label for="Senha"class="form-label"><h6> <p>Senha <span class="cor1">*</span></p></h6>
+                            <input type="password"  maxlength="40" size="45"  class="form-control" name="senha_usuario" id="nome" placeholder="Crie uma senha provisória para o Colaborador" required></label>
+                          </div>
+                          <button type="submit"class="botao">Cadastrar</button>
+                    </form>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</center>
+<br>
+<script src="partials/bootstrap/bootstrap.min.js"></script>
+<%- include('partials/footer') %> 

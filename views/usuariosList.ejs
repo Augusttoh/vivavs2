@@ -1,0 +1,36 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar') %> 
+
+<style>
+    body{
+        background: linear-gradient(to right,#e9a9c7, #c55682, #dc6895);
+    }
+    #texto{
+        text-align: center ;
+        font-size: larger;
+    }
+</style>
+
+<div class="container" id="texto">
+
+    <% usuarios1.forEach(usuario1 => {%>
+    <table>
+        <tr>
+            <td>
+                <p><%= usuario1.titulo %></p>
+            </td>
+            <td>
+                <p> : <%= usuario1.descricao %></p>
+            </td>
+        </tr>
+    </table>
+    <% }) %>
+    
+        
+        
+     
+
+</div>
+
+
+<%- include('partials/footer') %> 

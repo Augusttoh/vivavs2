@@ -1,0 +1,327 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar6') %> 
+<link rel="stylesheet" href="partials/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?familly=Poppins:wght@400;500;600&display=swap');
+
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+  
+}
+
+.wrapper{
+   max-width: 1000px;
+   position: relative;
+}
+body{
+    background: linear-gradient(to right, #c3a8eb,#126cd2);
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   padding: 0px;
+ }
+ .imges{
+   justify-content: space-between;
+   width: 70%;
+ }
+
+.wrapper i{
+   top: 50%;
+   height:46px ;
+   width: 46px;
+   cursor: pointer;
+   position: absolute;
+   font-size: 1.2rem;
+   text-align:center;
+   line-height: 46px;
+   background-color: rgb(131, 171, 240);
+   border-radius: 50%;
+   transform: translateY(-50%);
+}
+.wrapper i:first-child{
+   left:-31px;
+   display: none;
+}
+.wrapper i:last-child{
+   right:-45px;
+}
+
+.wrapper .carousel{
+   font-size: 0px;
+   cursor: pointer;
+   overflow: hidden;
+   white-space: nowrap;
+   scroll-behavior: smooth;
+   
+}
+.carousel .dragging{
+   scroll-behavior: auto;
+   cursor: grab;
+}
+.carousel .dragging img{
+ pointer-events: none;  
+}
+
+
+.carousel img{
+   
+   height: 250px;
+   object-fit: cover;
+   margin-left: 14px;
+   width: calc(100% /3);
+
+}
+.carousel img :first-child{
+   margin-left: 0px;
+}
+@media screen and (max-width:900px){
+   .carousel img{
+      width: calc(100%/1);
+   }
+}
+@media screen and (max-width:550px){
+   .carousel img{
+      width: calc(100%/1);
+   }
+}
+
+#divnoticiasdireita {
+    float: right;
+    width: 75%;
+ }
+ .espacamentoLista {
+    height: 30px;
+ }
+ .linhacolunaesquerda {
+    width: 80%;
+    height: 3px;
+    background-color: #51C951;
+    border: 0px;
+    margin-left: 0;
+ }
+ .textoNoticias {
+    color: #333;
+    text-decoration: none;
+ }
+ .tamanho1{
+    text-align: start;
+ }
+
+
+ @media (min-width: 768px) {
+    .imagens2 {
+      width: 300px; /* Largura para PCs */
+      height: 250px; /* Altura para PCs */
+      padding: 10px;
+    }
+  }
+
+  /* Estilo para dispositivos móveis (tela com largura igual ou menor que 768px) */
+  @media (max-width: 768px) {
+    .imagens2 {
+      width: 100px; /* Largura para dispositivos móveis */
+      height: 100px; /* Altura para dispositivos móveis */
+      border-radius: 20%;
+      padding: 6px;
+    }
+  }
+.imagens3{
+   width: 90px;
+   height: 90px;
+   border-radius: 100%;
+}
+
+
+.link{
+   color: #0b0c10;
+   font-size: medium;
+text-decoration: none;
+}
+
+#sair{
+   float: right;
+}
+
+.botao1{
+   border-radius: 100%;
+}
+.coraviso{ align-items: center;
+}
+.coraviso2{
+    background-color: rgba(18, 32, 107, 0.87); width: 10%; text-align: start;
+}
+
+.centro3{
+    text-align: center;
+
+}
+    </style>
+
+   <center>
+   
+   </center>
+
+<br><br>
+<div class="tamanho1">
+    <div class="background">
+    <table>
+       <tr>
+        <td>
+            <div id="divnoticiasesquerda" class="espacamentoLista">
+                <h4 class="textoNoticias" id="topo">Funcionalidades ▼</h4>
+                ----------------------------------------------------------------
+                <br><br>
+                <p class="textoNoticias"> <a class="link" href="Diário.html">Termometro de Emoções</a></p>
+                <p class="textoNoticias"> <a class="link" href="Diário.html">Diário de Emoções</a></p>
+                <p class="textoNoticias"> <a class="link" href="calendario.html">Calendário</a></p>
+                ----------------------------------------------------------------
+                <h4 class="textoNoticias" id="topo">Funções complementares ▼ </h4>
+                <br>
+                <p class="textoNoticias"> <a class="link" href="">Caixa de Mensagens  ✉</a> </p>
+                <p class="textoNoticias"> <a class="link" href="">configurações</a> </p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </td>
+       </tr>
+    </table>
+     </div>
+    
+    <center><h3>ATENÇÃO | Para seu uso ▼</h3></center>
+    <br><br>
+    <center>
+        
+      <center>
+        <table class="centro3">
+            <tr>
+                <td>
+                    <a href="Diário.html" target="_blank"><img src="img/diario3.png"  class="imagens2" alt="Diário de Emoções" ><figcaption><a class="link" href="">Diário Emocional</a></figcaption></a>
+                </td>
+                <td>
+                    <a href="Calendario-master/index.html" target="_blank" ><img src="../img/calendario3.png" class="imagens2" alt="Calendário"> <figcaption><a class="link" href=""> &nbsp; &nbsp; &nbsp;Calendário  &nbsp; &nbsp; &nbsp;</a></figcaption></a>
+                </td>
+                <td>
+                    <br>
+                    <a href="termometro" target="_blank "><img src="../img/termometro3.png" class="imagens2" alt="Termometro"><figcaption><a class="link" href="termometro">Termometro <br> de Emoções</a></figcaption></a>
+                </td>
+            </tr>
+        </table>
+      </center>
+
+</center>
+           
+     
+    <br><br>
+    <hr>
+    <center><h3 id="leitura">Para sua leitura ▼</h3></center>
+    <center><br><br><br>
+        <div class="imges">
+        <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+                <a href="inteligencia" target="_blank"><img  class="img" src="../img/9.png"  alt="Inteligencia emocional"></a>
+                <a href="Ergonomia" target="_blank" ><img  src="../img/8.png" class="img" alt="Ergonomia"></a>
+                <a href="saudemental" target="_blank"><img class="img" src="../img/12.png" alt=""></a>
+                <a href="nr" target="_blank"><img  class="img" src="../img/7.png"  alt="nr"></a>
+                <a href="ansiedade" target="_blank" ><img class="img" src="../img/3.png" alt="ansiedade"></a>
+                <a href="burnout" target="_blank"><img class="img" src="../img/2.png" alt="burnout"></a>
+                <a href="direitos" target="_blank"><img class="img" src="../img/1.png" alt="burnout"></a>
+                <a href="epi" target="_blank"><img class="img" src="../img/5.png" alt="burnout"></a>
+                <a href="depressao" target="_blank"><img class="img" src="../img/4.png" alt="burnout"></a>
+                <a href="emocoes" target="_blank"><img class="img" src="../img/6.png" alt="burnout"></a>
+            </div>
+              <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+    </center><br><br><br><br>
+
+        <hr>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <p id="complemento"><h4 class="textoNoticias">Matériais Complementares</h4></p>
+                    <p >◉<a href="" class="link"> Leitura</a></p>
+                    <p >◉<a href="" class="link"> Videos</a></p>
+                    <p >◉<a href="" class="link"> Podcasts</a></p>
+
+                    <p id="atividades"><h4 class="textoNoticias">Atividades</h4></p>
+                    <p >◉<a href="" class="link"> Teste de saúde mental</a></p>
+                    <p >◉<a href="" class="link"> Teste de Ergonomia</a></p>
+                    <p >◉<a href="" class="link"> Teste de Inteligencia Emocional</a></p>
+
+                    <p id="relatorios"><h4 class="textoNoticias">Histórico de Relatórios</h4></p>
+                    <p >◉<a href="" class="link"> Nenhum relatório gerado</a></p>
+                </td>
+            </tr>
+        </table>
+
+    
+
+        <br><br><br><br>
+        <footer>
+            <p><center><a href="#topo" class="link">Voltar ao topo</a></center></p>
+        </footer>
+    </div>
+
+<script>
+    const carousel = document.querySelector('.carousel'),
+firstImg= carousel.querySelectorAll('img')[0];
+arrowIcons= document.querySelectorAll('.wrapper i');
+
+let isDragStart = false, prevPageX, prevScrollLeft;
+
+
+
+const  showHIdeIcons = () => {
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? 'none' : 'block';
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? 'none' : 'block';
+}
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener('click', () =>{
+        let firstImgWidth = firstImg.clientWidth + 14;
+        carousel.scrollLeft += icon.id == 'left'? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHIdeIcons(), 60);
+    });
+});
+
+const dragStart = (e) => {
+    isDragStart = true;
+    prevPageX = e.pageX || e.touched[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    if(!isDragStart) return;
+    e.preventDefaut();
+    carousel.classList.add('dragging');
+    let positionDiff = (e.pageX || e.touched[0].pageX ) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHIdeIcons();
+}
+
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove('dragging');
+}
+carousel.addEventListener('mousedown',dragStart);
+carousel.addEventListener('touchstart',dragStart);
+
+
+carousel.addEventListener('mousemove',dragging);
+carousel.addEventListener('touchmove',dragging);
+
+carousel.addEventListener('mouseup',dragStop);
+carousel.addEventListener('mouseleave',dragStop);
+carousel.addEventListener('touchend',dragStop);0
+</script>
+
+<script src="partials/bootstrap/bootstrap.min.js"></script>
+<%- include('partials/footer') %> 

@@ -1,0 +1,138 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar5') %> 
+
+<style>
+  body{
+    background: linear-gradient(to right, #c3a8eb,#126cd2);
+}
+
+.container{
+   width: 300px;
+   height: 340px;
+   
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 4%;
+    box-shadow: 0px 0px 4px #777;
+    align-items: center;
+    
+}
+
+.emoji{
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+    text-shadow: 0px 0px 4px #555;
+}
+.mood{
+    text-align:center;
+    margin: 0px 0px 20px px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mood2{
+    text-align:center;
+    font-size: 25px;
+}
+.emoji-slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    max-width: 400px;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+
+}
+.btn btn-success{
+    color: green;
+    background-color: green;
+    border-bottom: green;
+}
+.link2{
+    color: #ffffff;
+    font-size: medium;
+text-decoration: none;
+}
+</style>
+
+<header><center><img src="./partials/img/logonova.png" alt="" width="35%"></center></header>
+<br><br><br><br>
+
+
+    <center>
+        <p>
+            <div class="alinhar">
+                <div class="container">
+                    <form action="/salvarEmoji" method="POST">
+                        <!-- Input hidden para enviar o nome do emoji escolhido -->
+                        <input type="hidden" id="emojiName" name="emojiName" value="">
+                        <!-- O emoji escolhido é exibido aqui -->
+                        <p class="mood2" id="mood2">O que você está sentindo?</p>
+                        <div class="emoji" id="emoji">&#128543;</div>
+                        <p class="mood" id="mood">Preocupação</p>
+                        <!-- Controle deslizante -->
+                        <input type="range" min="1" max="6" name="emojiValue" class="emoji-slider" id="range">
+                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                      </form>
+                </div>
+            </div>
+            
+        </p>
+        
+    </center>
+
+    <script>
+        var emoji= document.getElementById('emoji');
+var mood = document.getElementById('mood');
+var sliderValue =document.getElementById('range');
+
+sliderValue.oninput =function()
+{
+var value = this.value;
+if(value ==1)
+{
+    emoji.innerHTML = '&#128545';
+    mood.innerHTML = 'Raiva';
+    name="raiva"
+}
+
+else if (value ==2)
+{
+    emoji.innerHTML = '&#129314';
+    mood.innerHTML = 'Nojo';
+    name="nojo"
+}
+else if (value ==3)
+{
+    emoji.innerHTML = '&#128552';
+    mood.innerHTML = 'Medo';
+    name="medo"
+}
+else if (value ==4)
+{
+    emoji.innerHTML = '&#128553;';
+    mood.innerHTML = 'Cansaço';
+    name="cancaco"
+}
+else if(value ==5)
+{
+    emoji.innerHTML = '&#128532';
+    mood.innerHTML = 'Tristeza';
+    name="tristeza"
+}
+else if(value ==6)
+{
+    emoji.innerHTML = '&#128513';
+    mood.innerHTML = 'Alegria';
+    name="alegria"
+}
+
+}
+    </script>
+
+<%- include('partials/footer') %> 
